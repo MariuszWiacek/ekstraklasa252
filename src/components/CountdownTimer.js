@@ -87,12 +87,12 @@ const CountdownTimer = () => {
             // Show logos for single next game
             <div style={{ marginTop: '10px', marginBottom: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
               <div style={{ textAlign: 'center' }}>
-                <img style={{ width: '50%', height: '50%' }} src={getTeamLogo(nextGames[0].home)} alt={nextGames[0].home} />
+                <img style={{ width: '65px', height: '65px' }} src={getTeamLogo(nextGames[0].home)} alt={nextGames[0].home} />
                 <hr />
               </div>
               <span style={{ fontSize: '24px', fontWeight: 'bold', color: 'gold' }}>VS</span>
               <div style={{ textAlign: 'center' }}>
-                <img style={{ width: '50%', height: '50%' }} src={getTeamLogo(nextGames[0].away)} alt={nextGames[0].away} />
+                <img style={{ width: '65px', height: '65px' }} src={getTeamLogo(nextGames[0].away)} alt={nextGames[0].away} />
                 <hr />
               </div>
             </div>
