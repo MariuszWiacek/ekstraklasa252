@@ -4,7 +4,7 @@ import { FaMedal } from "react-icons/fa";
 const historyData = [
   {
     title: "Ekstraklasa Wiosna 2025",
-    link: "https://ekstraklasa251.vercel.app/",
+    link: "https://ekstraklasa25.vercel.app/",
     podium: [
       { name: "Alan", place: 1 },
       { name: "Marcin", place: 2 },
