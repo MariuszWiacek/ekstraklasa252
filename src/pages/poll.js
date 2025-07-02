@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref, onValue } from "firebase/database";
+import { getDatabase, ref, push, onValue } from "firebase/database";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoins } from '@fortawesome/free-solid-svg-icons';
 
-// Firebase configuration
+// Firebase config
 const firebaseConfig = {
   apiKey: "AIzaSyC2cF6rVGusj97WXgab0_ZmHYFtvhMBI0g",
   authDomain: "jesien25-cd53b.firebaseapp.com",
@@ -14,229 +16,147 @@ const firebaseConfig = {
   measurementId: "G-EHS5DBQXJZ"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
-const Poll = ({ onClose }) => {
-  const [votes, setVotes] = useState(null);
+const SignupPage = ({ onClose }) => {
+  const [name, setName] = useState("");
+  const [players, setPlayers] = useState([]);
 
-  // Load votes from Firebase on component mount
   useEffect(() => {
-    const votesRef = ref(database, "votes");
-    onValue(votesRef, (snapshot) => {
+    const playersRef = ref(database, "players");
+    onValue(playersRef, (snapshot) => {
       if (snapshot.exists()) {
-        setVotes(snapshot.val());
+        const data = snapshot.val();
+        const playerList = Object.values(data);
+        setPlayers(playerList);
       }
     });
   }, []);
 
-  if (!votes) {
-    return <div style={{ color: "white" }}>Ładowanie ankiety...</div>;
-  }
+  const handleSignup = () => {
+    if (name.trim() === "") return;
 
-  // Calculate the total number of votes
-  const totalVotes = votes.option1.count + votes.option2.count + votes.oldRules.count;
-
-  // Calculate the percentage for each option
-  const option1Percentage = totalVotes ? (votes.option1.count / totalVotes) * 100 : 0;
-  const option2Percentage = totalVotes ? (votes.option2.count / totalVotes) * 100 : 0;
-  const oldRulesPercentage = totalVotes ? (votes.oldRules.count / totalVotes) * 100 : 0;
-
-  // Determine the winner and runners-up
-  const options = [
-    { name: "Bonus 10 🥮", count: votes.option1.count, percentage: option1Percentage },
-    { name: "Bonus 50 🥮", count: votes.option2.count, percentage: option2Percentage },
-    { name: "Stare zasady", count: votes.oldRules.count, percentage: oldRulesPercentage },
-  ];
-
-  options.sort((a, b) => b.count - a.count); // Sort by vote count in descending order
-
-  const [winner, secondPlace, thirdPlace] = options;
+    const playersRef = ref(database, "players");
+    push(playersRef, name.trim());
+    setName("");
+  };
 
   return (
-    <div style={pollContainerStyle}>
-      <div style={pollContentStyle}>
-        <button onClick={onClose} style={closeButtonStyle}>
-          X
-        </button>
-        <h3>Zaczynamy grę ! </h3>
-        <p style={{ color: "black" }}>
-          Dziękujemy za wzięcie udziału w ankiecie. Oto wyniki : 
-          <hr></hr>
-          <p style={{ color: "black", marginTop: "20px", fontWeight: "bold" }}>
-        Zrzutka w tej rundzie wynosi 62 🥮, podział nagród będzie wyglądał następująco:
-        <hr></hr>
-            <b>1 miejsce:</b>  400 🥮
-          <hr></hr>
-            <b>2 miejsce:</b> 200 🥮
-          <hr></hr>
-            <b>3 miejsce:</b> 100 🥮
-            <hr></hr>
-           + Bonus - nagroda za każdą wygraną kolejkę to 10 🥮. W przypadku więcej niż jednego wygranego, nagroda kumuluje na następną kolejkę itd.
-        </p><hr></hr>Wyniki ankiety :
+    <div style={containerStyle}>
+      <div style={boxStyle}>
+        <button onClick={onClose} style={closeButtonStyle}>X</button>
+        <h8 style={headingStyle}>
+         Zapisy ! Typer Ekstraklasa Jesień 2025 <br></br> udowodnij, że znasz się na piłce!
+        </h8><hr></hr>
+        <p style={descriptionStyle}>
+          Zrzutka po ok. 60 <FontAwesomeIcon icon={faCoins} style={{ color: "#f0c419" }} />, w zależności od ilości graczy.<br></br><br></br>Zapisy do 15.7
         </p>
-        <div>
-          <div
-            style={{
-              ...optionContainerStyle,
-              backgroundColor: winner.name === "Bonus 10 🥮" ? "lightgreen" : "white",
-            }}
-          >
-            <label style={optionLabelStyle}>
-              <b>1. Bonus 10 🥮 - za każdą wygraną kolejkę</b>
-            </label>
-            <p style={voteCountStyle}>
-              Głosy: {votes.option1.count} ({option1Percentage.toFixed(2)}%)
-            </p>
-            <div style={progressBarContainerStyle}>
-              <div
-                style={{
-                  ...progressBarStyle,
-                  width: `${option1Percentage}%`,
-                }}
-              ></div>
-            </div>
-            <div style={votersStyle}>
-              {(votes.option1.voters || []).map((voter, index) => (
-                <span key={index}>{voter} </span>
-              ))}
-            </div>
-          </div>
-          <div
-            style={{
-              ...optionContainerStyle,
-              backgroundColor: winner.name === "Bonus 50 🥮" ? "lightgreen" : "white",
-            }}
-          >
-            <label style={optionLabelStyle}>
-              <b>2. Bonus 50 🥮 dla najlepszego typera miesiąca</b>
-            </label>
-            <p style={voteCountStyle}>
-              Głosy: {votes.option2.count} ({option2Percentage.toFixed(2)}%)
-            </p>
-            <div style={progressBarContainerStyle}>
-              <div
-                style={{
-                  ...progressBarStyle,
-                  width: `${option2Percentage}%`,
-                }}
-              ></div>
-            </div>
-            <div style={votersStyle}>
-              {(votes.option2.voters || []).map((voter, index) => (
-                <span key={index}>{voter} </span>
-              ))}
-            </div>
-          </div>
-          <div
-            style={{
-              ...optionContainerStyle,
-              backgroundColor: winner.name === "Stare zasady" ? "lightgreen" : "white",
-            }}
-          >
-            <label style={optionLabelStyle}>
-              <b>3. Stare zasady - bez dodatkowych bonusów</b>
-            </label>
-            <p style={voteCountStyle}>
-              Głosy: {votes.oldRules.count} ({oldRulesPercentage.toFixed(2)}%)
-            </p>
-            <div style={progressBarContainerStyle}>
-              <div
-                style={{
-                  ...progressBarStyle,
-                  width: `${oldRulesPercentage}%`,
-                }}
-              ></div>
-            </div>
-            <div style={votersStyle}>
-              {(votes.oldRules.voters || []).map((voter, index) => (
-                <span key={index}>{voter} </span>
-              ))}
-            </div>
-          </div>
-        </div>
-        
+        <input
+          type="text"
+          placeholder="Twoje imię/nick"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          style={inputStyle}
+        />
+        <button onClick={handleSignup} style={buttonStyle}>Zapisz się</button>
+
+        <hr style={{ margin: "20px 0", borderColor: "#ddd" }} />
+        <h8 style={{ color: "#444" }}>Lista zapisanych graczy:</h8><hr></hr>
+        <ul style={listStyle}>
+          {players.map((player, index) => (
+            <li key={index} style={playerStyle}>{player}</li>
+          ))}
+        </ul><hr></hr>
       </div>
     </div>
   );
 };
 
-const pollContainerStyle = {
+// --- Styles ---
+const containerStyle = {
   position: "fixed",
   top: 0,
   left: 0,
   width: "100%",
   height: "100%",
-  backgroundColor: "rgba(0, 0, 0, 0.7)",
+  background: "linear-gradient(to bottom right, #141e30, #243b55)",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   zIndex: 2000,
-  overflow: "hidden",
+  padding: "20px",
 };
 
-const pollContentStyle = {
-  backgroundColor: "white",
-  borderRadius: "10px",
-  padding: "20px",
-  width: "90%",
-  maxWidth: "500px",
+const boxStyle = {
+  background: "linear-gradient(135deg, #ffffff, #f4f4f4)",
+  boxShadow: "0 8px 24px rgba(0,0,0,0.2)",
+  borderRadius: "12px",
+  padding: "25px",
+  maxWidth: "450px",
+  width: "100%",
   textAlign: "center",
   position: "relative",
-  maxHeight: "80%",
-  overflowY: "auto",
 };
 
 const closeButtonStyle = {
   position: "absolute",
   top: "10px",
   right: "10px",
-  backgroundColor: "red",
+  backgroundColor: "#dc3545",
   color: "white",
   border: "none",
   borderRadius: "50%",
   width: "30px",
   height: "30px",
   cursor: "pointer",
+  fontWeight: "bold",
 };
 
-const optionContainerStyle = {
-  margin: "10px 0",
+const headingStyle = {
+  color: "purple",
+  fontWeight: "bolder",
+  marginBottom: "10px",
+  fontSize: "20px",
+};
+
+const descriptionStyle = {
+  fontSize: "16px",
+  color: "#555",
+  marginBottom: "20px",
+};
+
+const inputStyle = {
   padding: "10px",
-  borderRadius: "5px",
-  boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.2)",
-};
-
-const optionLabelStyle = {
-  display: "block",
-  margin: "10px 0",
-  color: "black",
-};
-
-const voteCountStyle = {
-  fontSize: "14px",
-  color: "black",
-};
-
-const progressBarContainerStyle = {
-  width: "100%",
-  height: "10px",
-  backgroundColor: "#ccc",
-  borderRadius: "5px",
+  width: "80%",
   marginBottom: "10px",
+  borderRadius: "6px",
+  border: "1px solid #ccc",
+  fontSize: "16px",
 };
 
-const progressBarStyle = {
-  height: "100%",
-  backgroundColor: "green",
-  borderRadius: "5px",
+const buttonStyle = {
+  padding: "10px 24px",
+  backgroundColor: "#1e90ff",
+  color: "white",
+  border: "none",
+  borderRadius: "6px",
+  fontSize: "16px",
+  cursor: "pointer",
+  transition: "background 0.3s",
 };
 
-const votersStyle = {
-  fontSize: "12px",
-  color: "gray",
-  marginBottom: "10px",
+const listStyle = {
+  listStyle: "none",
+  paddingLeft: 0,
+  marginTop: "10px",
 };
 
-export default Poll;
+const playerStyle = {
+  color: "#2c3e50",
+  fontWeight: "bold",
+  fontSize: "18px",
+  marginBottom: "6px",
+};
+
+export default SignupPage;

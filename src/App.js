@@ -13,18 +13,20 @@ import Bets from './pages/bets';
 import History from './pages/history';
 import Stats from './pages/stats';
 import Rules from './pages/rules';
-import Loading from './components/loading'; // Import the Loading component
-import pitch from './images/pitc.jpeg'; // Ensure this is the correct path to your image
+import Loading from './components/loading';
+import SignupPage from './pages/poll';
+import pitch from './images/pitc.jpeg';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [showSignup, setShowSignup] = useState(true); // 👈 State to show/hide popup
 
   useEffect(() => {
     const handleImageLoad = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 3000); // Ensure the loading screen is shown for at least 3 seconds
+      }, 3000);
     };
 
     const img = new Image();
@@ -38,7 +40,7 @@ function App() {
     window.addEventListener('resize', handleResize);
 
     return () => {
-      img.onload = null; // Cleanup in case the component unmounts
+      img.onload = null;
       window.removeEventListener('resize', handleResize);
     };
   }, []);
@@ -61,7 +63,7 @@ function App() {
             <Navbar />
             <div className="container" style={containerStyle}>
               <Timer />
-              <hr style={{ color: 'white' }}></hr>
+              <hr style={{ color: 'white' }} />
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/rules" element={<Rules />} />
@@ -75,6 +77,7 @@ function App() {
               </Routes>
             </div>
             <Footer />
+            {showSignup && <SignupPage onClose={() => setShowSignup(false)} />} {/* 👈 Popup */}
           </div>
         )}
       </AnimatePresence>
