@@ -4,7 +4,6 @@ import { getDatabase, ref, push, onValue } from "firebase/database";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoins } from '@fortawesome/free-solid-svg-icons';
 
-// Firebase config
 const firebaseConfig = {
   apiKey: "AIzaSyC2cF6rVGusj97WXgab0_ZmHYFtvhMBI0g",
   authDomain: "jesien25-cd53b.firebaseapp.com",
@@ -36,7 +35,6 @@ const SignupPage = ({ onClose }) => {
 
   const handleSignup = () => {
     if (name.trim() === "") return;
-
     const playersRef = ref(database, "players");
     push(playersRef, name.trim());
     setName("");
@@ -47,10 +45,12 @@ const SignupPage = ({ onClose }) => {
       <div style={boxStyle}>
         <button onClick={onClose} style={closeButtonStyle}>X</button>
         <h8 style={headingStyle}>
-         Zapisy ! Typer Ekstraklasa Jesień 2025 <br></br> udowodnij, że znasz się na piłce!
-        </h8><hr></hr>
+          Zapisy ! Typer Ekstraklasa Jesień 2025 <br /> udowodnij, że znasz się na piłce!
+        </h8>
+        <hr />
         <p style={descriptionStyle}>
-          Zrzutka po ok. 60 <FontAwesomeIcon icon={faCoins} style={{ color: "#f0c419" }} />, w zależności od ilości graczy.<br></br><br></br>Zapisy do 15.7
+          Zrzutka po ok. 60 <FontAwesomeIcon icon={faCoins} style={{ color: "#f0c419" }} />, w zależności od ilości graczy.<br /><br />
+          Zapisy do 15.7
         </p>
         <input
           type="text"
@@ -62,12 +62,17 @@ const SignupPage = ({ onClose }) => {
         <button onClick={handleSignup} style={buttonStyle}>Zapisz się</button>
 
         <hr style={{ margin: "20px 0", borderColor: "#ddd" }} />
-        <h8 style={{ color: "#444" }}>Lista zapisanych graczy:</h8><hr></hr>
-        <ul style={listStyle}>
+        <h8 style={{ color: "#444" }}>
+          Ilość zapisanych osób: <span style={{ color: "green" }}>{players.length}</span>
+        </h8>
+        <hr />
+        <h8 style={{ color: "#444" }}>Lista zapisanych graczy:</h8>
+        <ul style={horizontalListStyle}>
           {players.map((player, index) => (
             <li key={index} style={playerStyle}>{player}</li>
           ))}
-        </ul><hr></hr>
+        </ul>
+        <hr />
       </div>
     </div>
   );
@@ -93,7 +98,7 @@ const boxStyle = {
   boxShadow: "0 8px 24px rgba(0,0,0,0.2)",
   borderRadius: "12px",
   padding: "25px",
-  maxWidth: "450px",
+  maxWidth: "600px", // widened for horizontal list
   width: "100%",
   textAlign: "center",
   position: "relative",
@@ -146,17 +151,25 @@ const buttonStyle = {
   transition: "background 0.3s",
 };
 
-const listStyle = {
+const horizontalListStyle = {
   listStyle: "none",
-  paddingLeft: 0,
-  marginTop: "10px",
+  padding: "10px 0",
+  margin: "10px 0",
+  display: "flex",
+  flexDirection: "row",
+  overflowX: "auto",           // <-- Enables horizontal scrolling
+  whiteSpace: "nowrap",
+  gap: "10px",
+  maxWidth: "100%",            // Optional, ensures it stays inside container
 };
 
+
 const playerStyle = {
-  color: "#2c3e50",
+  backgroundColor: "#ecf0f1",
+  padding: "8px 12px",
+  borderRadius: "20px",
   fontWeight: "bold",
-  fontSize: "18px",
-  marginBottom: "6px",
+  color: "#2c3e50",
 };
 
 export default SignupPage;
