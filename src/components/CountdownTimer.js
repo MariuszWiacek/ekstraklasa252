@@ -79,7 +79,8 @@ const CountdownTimer = () => {
         <div style={{ backgroundColor: '#212529ab', color: 'aliceblue', padding: '24px' }}>
           <p style={{ color: "gold", fontSize: '14px', marginBottom: '10px' }}>Następny mecz:</p>
 
-          {nextGames.length < 5 ? (
+         {nextGames.length > 0 && nextGames.length < 9 ? (
+ 
             // Show logos for single next game
             <div style={{ marginTop: '10px', marginBottom: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
               <div style={{ textAlign: 'center' }}>
