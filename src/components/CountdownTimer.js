@@ -52,14 +52,10 @@ const CountdownTimer = () => {
     return () => clearInterval(interval);
   }, []);
 
-  if (nextGames.length === 0) {
-    return <p style={{ marginTop:"12px", fontSize: '32px', fontWeight: 'bold', color: '#00FFAA', fontFamily:"Rubik", textAlign:"center"}}>
-              Wielki finał -  Powodzenia !
-            </p>;
-  }
 
   // Check if this is the last round (kolejka 16)
-  const isLastRound = nextGames[0].round === 16;
+  const isLastRound = nextGames.length > 0 && nextGames[0].round === 16;
+
 
   // Check if all 9 matches are at the same time (meaning all are starting simultaneously)
   const all9MatchesSimultaneous = isLastRound && nextGames.length === 9;
@@ -83,7 +79,7 @@ const CountdownTimer = () => {
         <div style={{ backgroundColor: '#212529ab', color: 'aliceblue', padding: '24px' }}>
           <p style={{ color: "gold", fontSize: '14px', marginBottom: '10px' }}>Następny mecz:</p>
 
-          {nextGames.length === 1 ? (
+          {nextGames.length < 5 ? (
             // Show logos for single next game
             <div style={{ marginTop: '10px', marginBottom: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px' }}>
               <div style={{ textAlign: 'center' }}>
