@@ -164,21 +164,22 @@
   }
 ,
 
+ 
   {
-    "id": 19,
-    "kolejkaId": 3,
-    "home": "Wisła",
-    "away": "Piast",
-    "kickoff": "20:30",
-    "date": "2025-08-01",
-    "disabled": false
-  },
-  {
-    "id": 20,
+    "id": 10,
     "kolejkaId": 3,
     "home": "Zagłębie",
     "away": "Korona",
     "kickoff": "18:00",
+    "date": "2025-08-01",
+    "disabled": false
+  },
+   {
+    "id": 20,
+    "kolejkaId": 3,
+    "home": "Wisła",
+    "away": "Piast",
+    "kickoff": "20:30",
     "date": "2025-08-01",
     "disabled": false
   },
