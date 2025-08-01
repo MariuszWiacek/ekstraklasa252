@@ -18,7 +18,7 @@ const firebaseConfig = {
   authDomain: "jesien25-cd53b.firebaseapp.com",
   projectId: "jesien25-cd53b",
   databaseURL: "https://jesien25-cd53b-default-rtdb.europe-west1.firebasedatabase.app",
-  storageBucket: "jesien25-cd53b.firebasestorage.app",
+  storageBucket: "jesien25-cd53b.appspot.com",
   messagingSenderId: "557329099544",
   appId: "1:557329099544:web:f801e81254547845418c6d",
   measurementId: "G-EHS5DBQXJZ"
@@ -43,7 +43,7 @@ const groupGamesIntoKolejki = (games) => {
 };
 
 const Bets = () => {
-  const [kolejki, setKolejki] = useState(groupGamesIntoKolejki(gameData));
+  const [kolejki, setKolejki] = useState([]);
   const [selectedUser, setSelectedUser] = useState('');
   const [submittedData, setSubmittedData] = useState({});
   const [isDataSubmitted, setIsDataSubmitted] = useState(false);
@@ -75,9 +75,17 @@ const Bets = () => {
     });
 
     const now = new Date();
+    const fullKolejki = groupGamesIntoKolejki(gameData);
     const nextGameIndex = gameData.findIndex(game => new Date(`${game.date}T${game.kickoff}:00+02:00`) > now);
-    const kolejkaIndex = Math.floor(nextGameIndex / 9);
-    setCurrentKolejkaIndex(kolejkaIndex);
+    const nextKolejkaIndex = Math.floor(nextGameIndex / 9);
+
+    if (nextKolejkaIndex >= 0 && nextKolejkaIndex < fullKolejki.length) {
+      setKolejki([fullKolejki[nextKolejkaIndex]]);
+      setCurrentKolejkaIndex(0);
+    } else {
+      setKolejki([]);
+      setCurrentKolejkaIndex(0);
+    }
   }, []);
 
   const isReadOnly = (user, gameId) => submittedData[user] && submittedData[user][gameId];
@@ -163,7 +171,8 @@ const Bets = () => {
   const getTeamLogo = (name) => teamsData[name]?.logo || '';
   const toggleEditableOff = () => setAreInputsEditable(false);
   const toggleEditableOn = () => setAreInputsEditable(true);
-return (
+
+  return (
     <div className="fade-in" style={{ textAlign: 'center' }}>
       <p>Wybrany użytkownik : </p>
       <FontAwesomeIcon icon={faUser} style={{ marginRight: '8px', fontSize: '14px', color: 'yellow' }} />
@@ -189,17 +198,16 @@ return (
         <table style={{ width: '100%', border: '0.5px solid #444', borderCollapse: 'collapse', marginTop: '5%' }}>
           <thead>
             <tr>
-              <th style={{ borderBottom: '0.5px solid #444', textAlign: 'center' }}></th>
-              <th style={{ borderBottom: '0.5px solid #444', textAlign: 'center' }}>Gospodarz</th>
-              <th style={{ borderBottom: '0.5px solid #444', textAlign: 'center' }}></th>
-              <th style={{ borderBottom: '0.5px solid #444', textAlign: 'center' }}>Gość</th>
-              <th style={{ borderBottom: '0.5px solid #444', textAlign: 'center' }}>Wynik</th>
-              <th style={{ borderBottom: '0.5px solid #444', textAlign: 'center' }}>1X2</th>
-              <th style={{ borderBottom: '0.5px solid #444', textAlign: 'center' }}>Typ</th>
+              <th></th>
+              <th>Gospodarz</th>
+              <th></th>
+              <th>Gość</th>
+              <th>Wynik</th>
+              <th>1X2</th>
+              <th>Typ</th>
             </tr>
           </thead>
           <tbody>
-            {/* Check if kolejki and the selected currentKolejkaIndex are valid */}
             {kolejki && kolejki[currentKolejkaIndex] && kolejki[currentKolejkaIndex].games ? (
               kolejki[currentKolejkaIndex].games.map((game, index) => (
                 <React.Fragment key={index}>
@@ -210,15 +218,8 @@ return (
                       backgroundColor: gameStarted(game.date, game.kickoff) ? '#214029ab' : 'transparent',
                     }}
                   >
-                    <td
-                      colSpan="12"
-                      className="date"
-                      style={{ textAlign: 'left', color: 'gold', fontSize: '10px', paddingLeft: '10%' }}
-                    >
-                      &nbsp;&nbsp;&nbsp;
-                      {game.date}
-                      &nbsp;&nbsp;&nbsp;
-                      {game.kickoff}
+                    <td colSpan="12" className="date" style={{ textAlign: 'left', color: 'gold', fontSize: '10px', paddingLeft: '10%' }}>
+                      &nbsp;&nbsp;&nbsp;{game.date} &nbsp;&nbsp;&nbsp;{game.kickoff}
                     </td>
                   </tr>
                   <tr
@@ -274,57 +275,42 @@ return (
               ))
             ) : (
               <tr>
-                <td colSpan="6" style={{ textAlign: 'center', padding:'5%' }}>
-                  <p style={{ fontSize: '32px', fontWeight: 'bold', color: '#00FFAA', fontFamily:"Rubik", textAlign:"center"}}>
-              To już koniec rundy – dzięki za wspólną zabawę!
-            </p>
+                <td colSpan="6" style={{ textAlign: 'center', padding: '5%' }}>
+                  <p style={{ fontSize: '32px', fontWeight: 'bold', color: '#00FFAA', fontFamily: "Rubik", textAlign: "center" }}>
+                    To już koniec rundy – dzięki za wspólną zabawę!
+                  </p>
                 </td>
               </tr>
             )}
           </tbody>
         </table>
+
         <button
-            style={{ backgroundColor: '#DC3545', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '10px', cursor: 'pointer', display: 'inline-block', margin: '10px', fontSize: '14px', width: '60%', transition: 'background-color 0.3s' }}
-            onClick={handleSubmit}
-          >
-            Prześlij
-          </button>
-          {isDataSubmitted && Object.keys(submittedData).map((user) => (
-          <ExpandableCard key={user} user={user} bets={submittedData[user]} results={results} />))}
-        </div>
+          style={{ backgroundColor: '#DC3545', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '10px', cursor: 'pointer', display: 'inline-block', margin: '10px', fontSize: '14px', width: '60%' }}
+          onClick={handleSubmit}
+        >
+          Prześlij
+        </button>
+
+        {isDataSubmitted && Object.keys(submittedData).map((user) => (
+          <ExpandableCard key={user} user={user} bets={submittedData[user]} results={results} />
+        ))}
+
         <div style={{ textAlign: 'center', marginTop: '20px' }}>
-  <button
-    style={{
-      backgroundColor: '#28a745', 
-      color: 'white', 
-      padding: '10px 20px', 
-      border: 'none', 
-      borderRadius: '5px', 
-      marginRight: '10px', 
-      cursor: 'pointer'
-    }}
-    onClick={toggleEditableOff}
-  >
-    
-  </button>
-  <button
-    style={{
-      backgroundColor: '#007bff', 
-      color: 'white', 
-      padding: '10px 20px', 
-      border: 'none', 
-      borderRadius: '5px', 
-      cursor: 'pointer'
-    }}
-    onClick={toggleEditableOn}
-  >
-   
-  </button>
-</div>
+          <button
+            style={{ backgroundColor: '#28a745', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px', marginRight: '10px', cursor: 'pointer' }}
+            onClick={toggleEditableOff}
+          >
+          </button>
+          <button
+            style={{ backgroundColor: '#007bff', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}
+            onClick={toggleEditableOn}
+          >
+          </button>
+        </div>
       </div>
-    
+    </div>
   );
 };
 
-  
 export default Bets;
