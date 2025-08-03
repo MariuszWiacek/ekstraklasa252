@@ -328,168 +328,171 @@
     "date": "2025-08-11",
     "disabled": false
   },
+ 
   {
-  "id": 37,
-  "kolejkaId": 5,
-  "home": "Termalica",
-  "away": "Raków",
-  "kickoff": "17:00",
-  "date": "2025-08-16",
-  "disabled": false
-},
+    "id": 37,
+    "kolejkaId": 5,
+    "home": "Zagłębie",
+    "away": "Lechia",
+    "kickoff": "17:00",
+    "date": "2025-08-15",
+    "disabled": false
+  },
+  {
+    "id": 38,
+    "kolejkaId": 5,
+    "home": "Cracovia",
+    "away": "Widzew",
+    "kickoff": "19:30",
+    "date": "2025-08-15",
+    "disabled": false
+  },
+  {
+    "id": 39,
+    "kolejkaId": 5,
+    "home": "Motor",
+    "away": "Piast",
+    "kickoff": "13:45",
+    "date": "2025-08-16",
+    "disabled": false
+  },
+  {
+    "id": 40,
+    "kolejkaId": 5,
+    "home": "GKS",
+    "away": "Arka",
+    "kickoff": "16:30",
+    "date": "2025-08-16",
+    "disabled": false
+  },
+  {
+    "id": 41,
+    "kolejkaId": 5,
+    "home": "Lech",
+    "away": "Korona",
+    "kickoff": "19:15",
+    "date": "2025-08-16",
+    "disabled": false
+  },
+  {
+    "id": 42,
+    "kolejkaId": 5,
+    "home": "Termalica",
+    "away": "Raków",
+    "kickoff": "13:45",
+    "date": "2025-08-17",
+    "disabled": false
+  },
+  {
+    "id": 43,
+    "kolejkaId": 5,
+    "home": "Pogoń",
+    "away": "Górnik",
+    "kickoff": "16:30",
+    "date": "2025-08-17",
+    "disabled": false
+  },
+  {
+    "id": 44,
+    "kolejkaId": 5,
+    "home": "Radomiak",
+    "away": "Jagiellonia",
+    "kickoff": "16:30",
+    "date": "2025-08-17",
+    "disabled": false
+  },
+  {
+    "id": 45,
+    "kolejkaId": 5,
+    "home": "Wisła",
+    "away": "Legia",
+    "kickoff": "19:15",
+    "date": "2025-08-17",
+    "disabled": false
+  }
+,
 {
-  "id": 38,
-  "kolejkaId": 5,
-  "home": "Cracovia",
-  "away": "Widzew",
-  "kickoff": "17:00",
-  "date": "2025-08-16",
-  "disabled": false
-},
-{
-  "id": 39,
-  "kolejkaId": 5,
-  "home": "GKS",
-  "away": "Arka",
-  "kickoff": "17:00",
-  "date": "2025-08-16",
-  "disabled": false
-},
-{
-  "id": 40,
-  "kolejkaId": 5,
-  "home": "Lech",
-  "away": "Korona",
-  "kickoff": "17:00",
-  "date": "2025-08-16",
-  "disabled": false
-},
-{
-  "id": 41,
-  "kolejkaId": 5,
-  "home": "Motor",
-  "away": "Piast",
-  "kickoff": "17:00",
-  "date": "2025-08-16",
-  "disabled": false
-},
-{
-  "id": 42,
-  "kolejkaId": 5,
-  "home": "Pogoń",
-  "away": "Górnik",
-  "kickoff": "17:00",
-  "date": "2025-08-17",
-  "disabled": false
-},
-{
-  "id": 43,
-  "kolejkaId": 5,
-  "home": "Radomiak",
-  "away": "Jagiellonia",
-  "kickoff": "17:00",
-  "date": "2025-08-17",
-  "disabled": false
-},
-{
-  "id": 44,
-  "kolejkaId": 5,
-  "home": "Wisła",
-  "away": "Legia",
-  "kickoff": "17:00",
-  "date": "2025-08-17",
-  "disabled": false
-},
-{
-  "id": 45,
-  "kolejkaId": 5,
-  "home": "Zagłębie",
-  "away": "Lechia",
-  "kickoff": "17:00",
-  "date": "2025-08-17",
-  "disabled": false
-},
-{
-  "id": 46,
-  "kolejkaId": 6,
-  "home": "Górnik",
-  "away": "GKS",
-  "kickoff": "17:00",
-  "date": "2025-08-23",
-  "disabled": false
-},
-{
-  "id": 47,
-  "kolejkaId": 6,
-  "home": "Korona",
-  "away": "Motor",
-  "kickoff": "17:00",
-  "date": "2025-08-23",
-  "disabled": false
-},
-{
-  "id": 48,
-  "kolejkaId": 6,
-  "home": "Lechia",
-  "away": "Arka",
-  "kickoff": "17:00",
-  "date": "2025-08-23",
-  "disabled": false
-},
-{
-  "id": 49,
-  "kolejkaId": 6,
-  "home": "Legia",
-  "away": "Jagiellonia",
-  "kickoff": "17:00",
-  "date": "2025-08-24",
-  "disabled": false
-},
-{
-  "id": 50,
-  "kolejkaId": 6,
-  "home": "Piast",
-  "away": "Cracovia",
-  "kickoff": "17:00",
-  "date": "2025-08-24",
-  "disabled": false
-},
-{
-  "id": 51,
-  "kolejkaId": 6,
-  "home": "Radomiak",
-  "away": "Termalica",
-  "kickoff": "17:00",
-  "date": "2025-08-24",
-  "disabled": false
-},
-{
-  "id": 52,
-  "kolejkaId": 6,
-  "home": "Raków",
-  "away": "Lech",
-  "kickoff": "17:00",
-  "date": "2025-08-24",
-  "disabled": false
-},
-{
-  "id": 53,
-  "kolejkaId": 6,
-  "home": "Widzew",
-  "away": "Pogoń",
-  "kickoff": "17:00",
-  "date": "2025-08-24",
-  "disabled": false
-},
-{
-  "id": 54,
-  "kolejkaId": 6,
-  "home": "Wisła",
-  "away": "Zagłębie",
-  "kickoff": "17:00",
-  "date": "2025-08-24",
-  "disabled": false
-}, 
+    "id": 46,
+    "kolejkaId": 6,
+    "home": "Radomiak",
+    "away": "Termalica",
+    "kickoff": "17:00",
+    "date": "2025-08-22",
+    "disabled": false
+  },
+  {
+    "id": 47,
+    "kolejkaId": 6,
+    "home": "Widzew",
+    "away": "Pogoń",
+    "kickoff": "19:30",
+    "date": "2025-08-22",
+    "disabled": false
+  },
+  {
+    "id": 48,
+    "kolejkaId": 6,
+    "home": "Korona",
+    "away": "Motor",
+    "kickoff": "16:30",
+    "date": "2025-08-23",
+    "disabled": false
+  },
+  {
+    "id": 49,
+    "kolejkaId": 6,
+    "home": "Raków",
+    "away": "Lech",
+    "kickoff": "17:00",
+    "date": "2025-08-23",
+    "disabled": false
+  },
+  {
+    "id": 50,
+    "kolejkaId": 6,
+    "home": "Górnik",
+    "away": "GKS",
+    "kickoff": "19:15",
+    "date": "2025-08-23",
+    "disabled": false
+  },
+  {
+    "id": 51,
+    "kolejkaId": 6,
+    "home": "Piast",
+    "away": "Cracovia",
+    "kickoff": "13:45",
+    "date": "2025-08-24",
+    "disabled": false
+  },
+  {
+    "id": 52,
+    "kolejkaId": 6,
+    "home": "Lechia",
+    "away": "Arka",
+    "kickoff": "16:30",
+    "date": "2025-08-24",
+    "disabled": false
+  },
+  {
+    "id": 53,
+    "kolejkaId": 6,
+    "home": "Legia",
+    "away": "Jagiellonia",
+    "kickoff": "19:15",
+    "date": "2025-08-24",
+    "disabled": false
+  },
+  {
+    "id": 54,
+    "kolejkaId": 6,
+    "home": "Wisła",
+    "away": "Zagłębie",
+    "kickoff": "18:00",
+    "date": "2025-08-25",
+    "disabled": false
+  }
+,
 {
   "id": 55,
   "kolejkaId": 7,
