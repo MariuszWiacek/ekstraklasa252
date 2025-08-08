@@ -270,7 +270,7 @@
     "kolejkaId": 4,
     "home": "Widzew",
     "away": "Wisła",
-    "kickoff": "14:45",
+    "kickoff": "20:15",
     "date": "2025-08-09",
     "disabled": false
   },
@@ -288,7 +288,7 @@
     "kolejkaId": 4,
     "home": "Piast",
     "away": "Lech",
-    "kickoff": "20:15",
+    "kickoff": "00:00",
     "date": "2025-00-00",
     "disabled": false
   },
