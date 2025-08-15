@@ -334,7 +334,7 @@
     "kolejkaId": 5,
     "home": "Zagłębie",
     "away": "Lechia",
-    "kickoff": "17:00",
+    "kickoff": "18:00",
     "date": "2025-08-15",
     "disabled": false
   },
@@ -343,7 +343,7 @@
     "kolejkaId": 5,
     "home": "Cracovia",
     "away": "Widzew",
-    "kickoff": "19:30",
+    "kickoff": "20:30",
     "date": "2025-08-15",
     "disabled": false
   },
@@ -352,7 +352,7 @@
     "kolejkaId": 5,
     "home": "Motor",
     "away": "Piast",
-    "kickoff": "13:45",
+    "kickoff": "14:45",
     "date": "2025-08-16",
     "disabled": false
   },
@@ -361,7 +361,7 @@
     "kolejkaId": 5,
     "home": "GKS",
     "away": "Arka",
-    "kickoff": "16:30",
+    "kickoff": "17:30",
     "date": "2025-08-16",
     "disabled": false
   },
@@ -370,7 +370,7 @@
     "kolejkaId": 5,
     "home": "Lech",
     "away": "Korona",
-    "kickoff": "19:15",
+    "kickoff": "20:15",
     "date": "2025-08-16",
     "disabled": false
   },
@@ -379,7 +379,7 @@
     "kolejkaId": 5,
     "home": "Termalica",
     "away": "Raków",
-    "kickoff": "13:45",
+    "kickoff": "14:45",
     "date": "2025-08-17",
     "disabled": false
   },
@@ -388,7 +388,7 @@
     "kolejkaId": 5,
     "home": "Pogoń",
     "away": "Górnik",
-    "kickoff": "16:30",
+    "kickoff": "17:30",
     "date": "2025-08-17",
     "disabled": false
   },
@@ -397,7 +397,7 @@
     "kolejkaId": 5,
     "home": "Radomiak",
     "away": "Jagiellonia",
-    "kickoff": "16:30",
+    "kickoff": "17:30",
     "date": "2025-08-17",
     "disabled": false
   },
@@ -406,7 +406,7 @@
     "kolejkaId": 5,
     "home": "Wisła",
     "away": "Legia",
-    "kickoff": "19:15",
+    "kickoff": "20:15",
     "date": "2025-08-17",
     "disabled": false
   }
@@ -416,7 +416,7 @@
     "kolejkaId": 6,
     "home": "Radomiak",
     "away": "Termalica",
-    "kickoff": "17:00",
+    "kickoff": "18:00",
     "date": "2025-08-22",
     "disabled": false
   },
@@ -425,7 +425,7 @@
     "kolejkaId": 6,
     "home": "Widzew",
     "away": "Pogoń",
-    "kickoff": "19:30",
+    "kickoff": "20:30",
     "date": "2025-08-22",
     "disabled": false
   },
@@ -434,7 +434,7 @@
     "kolejkaId": 6,
     "home": "Korona",
     "away": "Motor",
-    "kickoff": "16:30",
+    "kickoff": "17:30",
     "date": "2025-08-23",
     "disabled": false
   },
@@ -443,7 +443,7 @@
     "kolejkaId": 6,
     "home": "Raków",
     "away": "Lech",
-    "kickoff": "17:00",
+    "kickoff": "18:00",
     "date": "2025-08-23",
     "disabled": false
   },
@@ -452,7 +452,7 @@
     "kolejkaId": 6,
     "home": "Górnik",
     "away": "GKS",
-    "kickoff": "19:15",
+    "kickoff": "20:15",
     "date": "2025-08-23",
     "disabled": false
   },
@@ -461,7 +461,7 @@
     "kolejkaId": 6,
     "home": "Piast",
     "away": "Cracovia",
-    "kickoff": "13:45",
+    "kickoff": "14:45",
     "date": "2025-08-24",
     "disabled": false
   },
@@ -470,7 +470,7 @@
     "kolejkaId": 6,
     "home": "Lechia",
     "away": "Arka",
-    "kickoff": "16:30",
+    "kickoff": "17:30",
     "date": "2025-08-24",
     "disabled": false
   },
@@ -479,7 +479,7 @@
     "kolejkaId": 6,
     "home": "Legia",
     "away": "Jagiellonia",
-    "kickoff": "19:15",
+    "kickoff": "20:15",
     "date": "2025-08-24",
     "disabled": false
   },
