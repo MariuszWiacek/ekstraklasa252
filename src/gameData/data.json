@@ -763,7 +763,7 @@
     "id": 84,
     "kolejkaId": 10,
     "home": "Piast",
-    "away": "Bruk-Bet",
+    "away": "Termalica",
     "kickoff": "17:30",
     "date": "2025-09-27",
     "disabled": false
@@ -843,7 +843,7 @@
   {
     "id": 93,
     "kolejkaId": 11,
-    "home": "Bruk-Bet",
+    "home": "Termalica",
     "away": "Widzew",
     "kickoff": "14:45",
     "date": "2025-10-04",
@@ -979,7 +979,7 @@
     "id": 108,
     "kolejkaId": 12,
     "home": "Wisła",
-    "away": "Bruk-Bet",
+    "away": "Termalica",
     "kickoff": "19:00",
     "date": "2025-10-20",
     "disabled": false
