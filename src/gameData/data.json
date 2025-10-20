@@ -985,334 +985,332 @@
     "disabled": false
   }
 ,
-{
-  "id": 109,
-  "kolejkaId": 13,
-  "home": "Arka",
-  "away": "Piast",
-  "kickoff": "17:00",
-  "date": "2025-10-25",
-  "disabled": false
-},
-{
-  "id": 110,
-  "kolejkaId": 13,
-  "home": "Termalica",
-  "away": "Zagłębie",
-  "kickoff": "17:00",
-  "date": "2025-10-25",
-  "disabled": false
-},
-{
-  "id": 111,
-  "kolejkaId": 13,
-  "home": "GKS",
-  "away": "Korona",
-  "kickoff": "17:00",
-  "date": "2025-10-25",
-  "disabled": false
-},
-{
-  "id": 112,
-  "kolejkaId": 13,
-  "home": "Górnik",
-  "away": "Jagiellonia",
-  "kickoff": "17:00",
-  "date": "2025-10-25",
-  "disabled": false
-},
-{
-  "id": 113,
-  "kolejkaId": 13,
-  "home": "Legia",
-  "away": "Lech",
-  "kickoff": "17:00",
-  "date": "2025-10-25",
-  "disabled": false
-},
-{
-  "id": 114,
-  "kolejkaId": 13,
-  "home": "Motor",
-  "away": "Widzew",
-  "kickoff": "17:00",
-  "date": "2025-10-25",
-  "disabled": false
-},
-{
-  "id": 115,
-  "kolejkaId": 13,
-  "home": "Pogoń",
-  "away": "Cracovia",
-  "kickoff": "17:00",
-  "date": "2025-10-25",
-  "disabled": false
-},
-{
-  "id": 116,
-  "kolejkaId": 13,
-  "home": "Radomiak",
-  "away": "Wisła",
-  "kickoff": "17:00",
-  "date": "2025-10-25",
-  "disabled": false
-},
-{
-  "id": 117,
-  "kolejkaId": 13,
-  "home": "Raków",
-  "away": "Lechia",
-  "kickoff": "17:00",
-  "date": "2025-10-25",
-  "disabled": false
-},
 
-{
-  "id": 118,
-  "kolejkaId": 14,
-  "home": "Termalica",
-  "away": "GKS",
-  "kickoff": "17:00",
-  "date": "2025-11-01",
-  "disabled": false
-},
-{
-  "id": 119,
-  "kolejkaId": 14,
-  "home": "Cracovia",
-  "away": "Zagłębie",
-  "kickoff": "17:00",
-  "date": "2025-11-01",
-  "disabled": false
-},
-{
-  "id": 120,
-  "kolejkaId": 14,
-  "home": "Górnik",
-  "away": "Arka",
-  "kickoff": "17:00",
-  "date": "2025-11-01",
-  "disabled": false
-},
-{
-  "id": 121,
-  "kolejkaId": 14,
-  "home": "Jagiellonia",
-  "away": "Raków",
-  "kickoff": "17:00",
-  "date": "2025-11-01",
-  "disabled": false
-},
-{
-  "id": 122,
-  "kolejkaId": 14,
-  "home": "Lech",
-  "away": "Motor",
-  "kickoff": "17:00",
-  "date": "2025-11-01",
-  "disabled": false
-},
-{
-  "id": 123,
-  "kolejkaId": 14,
-  "home": "Lechia",
-  "away": "Radomiak",
-  "kickoff": "17:00",
-  "date": "2025-11-01",
-  "disabled": false
-},
-{
-  "id": 124,
-  "kolejkaId": 14,
-  "home": "Piast",
-  "away": "Korona",
-  "kickoff": "17:00",
-  "date": "2025-11-01",
-  "disabled": false
-},
-{
-  "id": 125,
-  "kolejkaId": 14,
-  "home": "Widzew",
-  "away": "Legia",
-  "kickoff": "17:00",
-  "date": "2025-11-01",
-  "disabled": false
-},
-{
-  "id": 126,
-  "kolejkaId": 14,
-  "home": "Wisła",
-  "away": "Pogoń",
-  "kickoff": "17:00",
-  "date": "2025-11-01",
-  "disabled": false
-},
-
-{
-  "id": 127,
-  "kolejkaId": 15,
-  "home": "Arka",
-  "away": "Lech",
-  "kickoff": "17:00",
-  "date": "2025-11-08",
-  "disabled": false
-},
-{
-  "id": 128,
-  "kolejkaId": 15,
-  "home": "GKS",
-  "away": "Piast",
-  "kickoff": "17:00",
-  "date": "2025-11-08",
-  "disabled": false
-},
-{
-  "id": 129,
-  "kolejkaId": 15,
-  "home": "Korona",
-  "away": "Raków",
-  "kickoff": "17:00",
-  "date": "2025-11-08",
-  "disabled": false
-},
-{
-  "id": 130,
-  "kolejkaId": 15,
-  "home": "Lechia",
-  "away": "Widzew",
-  "kickoff": "17:00",
-  "date": "2025-11-08",
-  "disabled": false
-},
-{
-  "id": 131,
-  "kolejkaId": 15,
-  "home": "Legia",
-  "away": "Termalica",
-  "kickoff": "17:00",
-  "date": "2025-11-08",
-  "disabled": false
-},
-{
-  "id": 132,
-  "kolejkaId": 15,
-  "home": "Motor",
-  "away": "Wisła",
-  "kickoff": "17:00",
-  "date": "2025-11-08",
-  "disabled": false
-},
-{
-  "id": 133,
-  "kolejkaId": 15,
-  "home": "Pogoń",
-  "away": "Jagiellonia",
-  "kickoff": "17:00",
-  "date": "2025-11-08",
-  "disabled": false
-},
-{
-  "id": 134,
-  "kolejkaId": 15,
-  "home": "Radomiak",
-  "away": "Cracovia",
-  "kickoff": "17:00",
-  "date": "2025-11-08",
-  "disabled": false
-},
-{
-  "id": 135,
-  "kolejkaId": 15,
-  "home": "Zagłębie",
-  "away": "Górnik",
-  "kickoff": "17:00",
-  "date": "2025-11-08",
-  "disabled": false
-},
-
-{
-  "id": 136,
-  "kolejkaId": 16,
-  "home": "Termalica",
-  "away": "Arka",
-  "kickoff": "17:00",
-  "date": "2025-11-22",
-  "disabled": false
-},
-{
-  "id": 137,
-  "kolejkaId": 16,
-  "home": "Cracovia",
-  "away": "Motor",
-  "kickoff": "17:00",
-  "date": "2025-11-22",
-  "disabled": false
-},
-{
-  "id": 138,
-  "kolejkaId": 16,
-  "home": "Górnik",
-  "away": "Wisła",
-  "kickoff": "17:00",
-  "date": "2025-11-22",
-  "disabled": false
-},
-{
-  "id": 139,
-  "kolejkaId": 16,
-  "home": "Jagiellonia",
-  "away": "GKS",
-  "kickoff": "17:00",
-  "date": "2025-11-22",
-  "disabled": false
-},
-{
-  "id": 140,
-  "kolejkaId": 16,
-  "home": "Lech",
-  "away": "Radomiak",
-  "kickoff": "17:00",
-  "date": "2025-11-22",
-  "disabled": false
-},
-{
-  "id": 141,
-  "kolejkaId": 16,
-  "home": "Legia",
-  "away": "Lechia",
-  "kickoff": "17:00",
-  "date": "2025-11-22",
-  "disabled": false
-},
-{
-  "id": 142,
-  "kolejkaId": 16,
-  "home": "Pogoń",
-  "away": "Zagłębie",
-  "kickoff": "17:00",
-  "date": "2025-11-22",
-  "disabled": false
-},
-{
-  "id": 143,
-  "kolejkaId": 16,
-  "home": "Raków",
-  "away": "Piast",
-  "kickoff": "17:00",
-  "date": "2025-11-22",
-  "disabled": false
-},
-{
-  "id": 144,
-  "kolejkaId": 16,
-  "home": "Widzew",
-  "away": "Korona",
-  "kickoff": "17:00",
-  "date": "2025-11-22",
-  "disabled": false
-},
-
+  {
+    "id": 109,
+    "kolejkaId": 13,
+    "home": "Termalica",
+    "away": "Zagłębie",
+    "kickoff": "18:00",
+    "date": "2025-10-24",
+    "disabled": false
+  },
+  {
+    "id": 110,
+    "kolejkaId": 13,
+    "home": "Motor",
+    "away": "Widzew",
+    "kickoff": "20:30",
+    "date": "2025-10-24",
+    "disabled": false
+  },
+  {
+    "id": 111,
+    "kolejkaId": 13,
+    "home": "Pogoń",
+    "away": "Cracovia",
+    "kickoff": "17:30",
+    "date": "2025-10-25",
+    "disabled": false
+  },
+  {
+    "id": 112,
+    "kolejkaId": 13,
+    "home": "Arka",
+    "away": "Piast",
+    "kickoff": "14:45",
+    "date": "2025-10-25",
+    "disabled": false
+  },
+  {
+    "id": 113,
+    "kolejkaId": 13,
+    "home": "GKS",
+    "away": "Korona",
+    "kickoff": "20:15",
+    "date": "2025-10-25",
+    "disabled": false
+  },
+  {
+    "id": 114,
+    "kolejkaId": 13,
+    "home": "Raków",
+    "away": "Lechia",
+    "kickoff": "14:45",
+    "date": "2025-10-26",
+    "disabled": false
+  },
+  {
+    "id": 115,
+    "kolejkaId": 13,
+    "home": "Górnik",
+    "away": "Jagiellonia",
+    "kickoff": "17:30",
+    "date": "2025-10-26",
+    "disabled": false
+  },
+  {
+    "id": 116,
+    "kolejkaId": 13,
+    "home": "Legia",
+    "away": "Lech",
+    "kickoff": "20:15",
+    "date": "2025-10-26",
+    "disabled": false
+  },
+  {
+    "id": 117,
+    "kolejkaId": 13,
+    "home": "Radomiak",
+    "away": "Wisła",
+    "kickoff": "19:00",
+    "date": "2025-10-27",
+    "disabled": false
+  },
+  {
+    "id": 118,
+    "kolejkaId": 14,
+    "home": "Termalica",
+    "away": "GKS",
+    "kickoff": "18:00",
+    "date": "2025-10-31",
+    "disabled": false
+  },
+  {
+    "id": 119,
+    "kolejkaId": 14,
+    "home": "Piast",
+    "away": "Korona",
+    "kickoff": "20:30",
+    "date": "2025-10-31",
+    "disabled": false
+  },
+  {
+    "id": 120,
+    "kolejkaId": 14,
+    "home": "Górnik",
+    "away": "Arka",
+    "kickoff": "12:15",
+    "date": "2025-11-02",
+    "disabled": false
+  },
+  {
+    "id": 121,
+    "kolejkaId": 14,
+    "home": "Lech",
+    "away": "Motor",
+    "kickoff": "14:45",
+    "date": "2025-11-02",
+    "disabled": false
+  },
+  {
+    "id": 122,
+    "kolejkaId": 14,
+    "home": "Jagiellonia",
+    "away": "Raków",
+    "kickoff": "17:30",
+    "date": "2025-11-02",
+    "disabled": false
+  },
+  {
+    "id": 123,
+    "kolejkaId": 14,
+    "home": "Widzew",
+    "away": "Legia",
+    "kickoff": "20:15",
+    "date": "2025-11-02",
+    "disabled": false
+  },
+  {
+    "id": 124,
+    "kolejkaId": 14,
+    "home": "Lechia",
+    "away": "Radomiak",
+    "kickoff": "18:00",
+    "date": "2025-11-03",
+    "disabled": false
+  },
+  {
+    "id": 125,
+    "kolejkaId": 14,
+    "home": "Wisła",
+    "away": "Pogoń",
+    "kickoff": "18:00",
+    "date": "2025-11-03",
+    "disabled": false
+  },
+  {
+    "id": 126,
+    "kolejkaId": 14,
+    "home": "Cracovia",
+    "away": "Zagłębie",
+    "kickoff": "20:30",
+    "date": "2025-11-03",
+    "disabled": false
+  },
+  {
+    "id": 127,
+    "kolejkaId": 15,
+    "home": "Radomiak",
+    "away": "Cracovia",
+    "kickoff": "18:00",
+    "date": "2025-11-07",
+    "disabled": false
+  },
+  {
+    "id": 128,
+    "kolejkaId": 15,
+    "home": "Zagłębie",
+    "away": "Górnik",
+    "kickoff": "20:30",
+    "date": "2025-11-07",
+    "disabled": false
+  },
+  {
+    "id": 129,
+    "kolejkaId": 15,
+    "home": "Lechia",
+    "away": "Widzew",
+    "kickoff": "14:45",
+    "date": "2025-11-08",
+    "disabled": false
+  },
+  {
+    "id": 130,
+    "kolejkaId": 15,
+    "home": "Motor",
+    "away": "Wisła",
+    "kickoff": "17:30",
+    "date": "2025-11-08",
+    "disabled": false
+  },
+  {
+    "id": 131,
+    "kolejkaId": 15,
+    "home": "GKS",
+    "away": "Piast",
+    "kickoff": "20:15",
+    "date": "2025-11-08",
+    "disabled": false
+  },
+  {
+    "id": 132,
+    "kolejkaId": 15,
+    "home": "Korona",
+    "away": "Raków",
+    "kickoff": "14:45",
+    "date": "2025-11-09",
+    "disabled": false
+  },
+  {
+    "id": 133,
+    "kolejkaId": 15,
+    "home": "Legia",
+    "away": "Termalica",
+    "kickoff": "14:45",
+    "date": "2025-11-09",
+    "disabled": false
+  },
+  {
+    "id": 134,
+    "kolejkaId": 15,
+    "home": "Pogoń",
+    "away": "Jagiellonia",
+    "kickoff": "17:30",
+    "date": "2025-11-09",
+    "disabled": false
+  },
+  {
+    "id": 135,
+    "kolejkaId": 15,
+    "home": "Arka",
+    "away": "Lech",
+    "kickoff": "20:15",
+    "date": "2025-11-09",
+    "disabled": false
+  },
+  {
+    "id": 136,
+    "kolejkaId": 16,
+    "home": "Termalica",
+    "away": "Arka",
+    "kickoff": "18:00",
+    "date": "2025-11-21",
+    "disabled": false
+  },
+  {
+    "id": 137,
+    "kolejkaId": 16,
+    "home": "Górnik",
+    "away": "Wisła",
+    "kickoff": "20:30",
+    "date": "2025-11-21",
+    "disabled": false
+  },
+  {
+    "id": 138,
+    "kolejkaId": 16,
+    "home": "Cracovia",
+    "away": "Motor",
+    "kickoff": "14:45",
+    "date": "2025-11-22",
+    "disabled": false
+  },
+  {
+    "id": 139,
+    "kolejkaId": 16,
+    "home": "Raków",
+    "away": "Piast",
+    "kickoff": "17:30",
+    "date": "2025-11-22",
+    "disabled": false
+  },
+  {
+    "id": 140,
+    "kolejkaId": 16,
+    "home": "Legia",
+    "away": "Lechia",
+    "kickoff": "20:15",
+    "date": "2025-11-22",
+    "disabled": false
+  },
+  {
+    "id": 141,
+    "kolejkaId": 16,
+    "home": "Jagiellonia",
+    "away": "GKS",
+    "kickoff": "12:15",
+    "date": "2025-11-23",
+    "disabled": false
+  },
+  {
+    "id": 142,
+    "kolejkaId": 16,
+    "home": "Lech",
+    "away": "Radomiak",
+    "kickoff": "14:45",
+    "date": "2025-11-23",
+    "disabled": false
+  },
+  {
+    "id": 143,
+    "kolejkaId": 16,
+    "home": "Widzew",
+    "away": "Korona",
+    "kickoff": "17:30",
+    "date": "2025-11-23",
+    "disabled": false
+  },
+  {
+    "id": 144,
+    "kolejkaId": 16,
+    "home": "Pogoń",
+    "away": "Zagłębie",
+    "kickoff": "19:00",
+    "date": "2025-11-24",
+    "disabled": false
+  }
+,
 {
   "id": 145,
   "kolejkaId": 17,
