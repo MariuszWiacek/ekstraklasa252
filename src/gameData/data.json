@@ -1007,18 +1007,18 @@
   {
     "id": 111,
     "kolejkaId": 13,
-    "home": "Pogoń",
-    "away": "Cracovia",
-    "kickoff": "17:30",
+    "home": "Arka",
+    "away": "Piast",
+    "kickoff": "14:45",
     "date": "2025-10-25",
     "disabled": false
   },
   {
     "id": 112,
     "kolejkaId": 13,
-    "home": "Arka",
-    "away": "Piast",
-    "kickoff": "14:45",
+    "home": "Pogoń",
+    "away": "Cracovia",
+    "kickoff": "17:30",
     "date": "2025-10-25",
     "disabled": false
   },
