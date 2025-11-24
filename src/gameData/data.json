@@ -76,8 +76,8 @@
     "kolejkaId": 1,
     "home": "Legia",
     "away": "Piast",
-    "kickoff": "",
-    "date": "",
+    "kickoff": "20:15",
+    "date": "2025-12-14",
     "disabled": false
   }
 ,
@@ -216,7 +216,7 @@
     "home": "Motor",
     "away": "Jagiellonia",
     "kickoff": "17:30",
-    "date": "2025-00-00",
+    "date": "2025-12-14",
     "disabled": false
   },
   {
@@ -289,7 +289,7 @@
     "home": "Piast",
     "away": "Lech",
     "kickoff": "00:00",
-    "date": "2025-00-00",
+    "date": "Wiosna 2026",
     "disabled": false
   },
   {
@@ -298,7 +298,7 @@
     "home": "Raków",
     "away": "Zagłębie",
     "kickoff": "14:45",
-    "date": "2025-00-00",
+    "date": "2025-12-14",
     "disabled": false
   },
   {
@@ -1280,7 +1280,7 @@
     "home": "Jagiellonia",
     "away": "GKS",
     "kickoff": "12:15",
-    "date": "2025-11-23",
+    "date": "Wiosna 2026",
     "disabled": false
   },
   {
