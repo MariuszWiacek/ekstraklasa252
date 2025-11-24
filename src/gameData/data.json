@@ -1311,67 +1311,68 @@
     "disabled": false
   }
 ,
-{
+
+  {
   "id": 145,
   "kolejkaId": 17,
-  "home": "Arka",
-  "away": "Raków",
-  "kickoff": "17:00",
-  "date": "2025-11-29",
+  "home": "Piast",
+  "away": "Widzew",
+  "kickoff": "18:00",
+  "date": "2025-11-28",
   "disabled": false
 },
 {
   "id": 146,
   "kolejkaId": 17,
-  "home": "GKS",
-  "away": "Pogoń",
-  "kickoff": "17:00",
-  "date": "2025-11-29",
+  "home": "Radomiak",
+  "away": "Górnik",
+  "kickoff": "20:30",
+  "date": "2025-11-28",
   "disabled": false
 },
 {
   "id": 147,
   "kolejkaId": 17,
-  "home": "Korona",
-  "away": "Cracovia",
-  "kickoff": "17:00",
+  "home": "Lechia",
+  "away": "Termalica",
+  "kickoff": "14:45",
   "date": "2025-11-29",
   "disabled": false
 },
 {
   "id": 148,
   "kolejkaId": 17,
-  "home": "Lechia",
-  "away": "Termalica",
-  "kickoff": "17:00",
+  "home": "Korona",
+  "away": "Cracovia",
+  "kickoff": "17:30",
   "date": "2025-11-29",
   "disabled": false
 },
 {
   "id": 149,
   "kolejkaId": 17,
-  "home": "Motor",
-  "away": "Legia",
-  "kickoff": "17:00",
+  "home": "GKS",
+  "away": "Pogoń",
+  "kickoff": "20:15",
   "date": "2025-11-29",
   "disabled": false
 },
 {
   "id": 150,
   "kolejkaId": 17,
-  "home": "Piast",
-  "away": "Widzew",
-  "kickoff": "17:00",
-  "date": "2025-11-29",
+  "home": "Arka",
+  "away": "Raków",
+  "kickoff": "14:45",
+  "date": "2025-11-30",
   "disabled": false
 },
 {
   "id": 151,
   "kolejkaId": 17,
-  "home": "Radomiak",
-  "away": "Górnik",
-  "kickoff": "17:00",
-  "date": "2025-11-29",
+  "home": "Zagłębie",
+  "away": "Jagiellonia",
+  "kickoff": "17:30",
+  "date": "2025-11-30",
   "disabled": false
 },
 {
@@ -1379,99 +1380,99 @@
   "kolejkaId": 17,
   "home": "Wisła",
   "away": "Lech",
-  "kickoff": "17:00",
-  "date": "2025-11-29",
+  "kickoff": "20:15",
+  "date": "2025-11-30",
   "disabled": false
 },
 {
   "id": 153,
   "kolejkaId": 17,
-  "home": "Zagłębie",
-  "away": "Jagiellonia",
-  "kickoff": "17:00",
-  "date": "2025-11-29",
+  "home": "Motor",
+  "away": "Legia",
+  "kickoff": "19:00",
+  "date": "2025-12-01",
   "disabled": false
 },
 
-{
+  {
   "id": 154,
   "kolejkaId": 18,
-  "home": "Arka",
-  "away": "Motor",
-  "kickoff": "17:00",
-  "date": "2025-12-06",
+  "home": "Lechia",
+  "away": "Górnik",
+  "kickoff": "20:30",
+  "date": "2025-12-05",
   "disabled": false
 },
 {
   "id": 155,
   "kolejkaId": 18,
-  "home": "Termalica",
-  "away": "Jagiellonia",
-  "kickoff": "17:00",
+  "home": "Arka",
+  "away": "Motor",
+  "kickoff": "12:15",
   "date": "2025-12-06",
   "disabled": false
 },
 {
   "id": 156,
   "kolejkaId": 18,
-  "home": "Cracovia",
-  "away": "Lech",
-  "kickoff": "17:00",
+  "home": "Piast",
+  "away": "Legia",
+  "kickoff": "20:15",
   "date": "2025-12-06",
   "disabled": false
 },
 {
   "id": 157,
   "kolejkaId": 18,
-  "home": "Korona",
-  "away": "Wisła",
-  "kickoff": "17:00",
+  "home": "Pogoń",
+  "away": "Radomiak",
+  "kickoff": "14:45",
   "date": "2025-12-06",
   "disabled": false
 },
 {
   "id": 158,
   "kolejkaId": 18,
-  "home": "Lechia",
-  "away": "Górnik",
-  "kickoff": "17:00",
+  "home": "Zagłębie",
+  "away": "Widzew",
+  "kickoff": "17:30",
   "date": "2025-12-06",
   "disabled": false
 },
 {
   "id": 159,
   "kolejkaId": 18,
-  "home": "Piast",
-  "away": "Radomiak",
-  "kickoff": "17:00",
-  "date": "2025-12-06",
+  "home": "Termalica",
+  "away": "Jagiellonia",
+  "kickoff": "12:15",
+  "date": "2025-12-07",
   "disabled": false
 },
 {
   "id": 160,
   "kolejkaId": 18,
-  "home": "Legia",
-  "away": "GKS",
-  "kickoff": "17:00",
-  "date": "2025-12-06",
+  "home": "Cracovia",
+  "away": "Lech",
+  "kickoff": "14:45",
+  "date": "2025-12-07",
   "disabled": false
 },
 {
   "id": 161,
   "kolejkaId": 18,
-  "home": "Pogoń",
-  "away": "Raków",
-  "kickoff": "17:00",
-  "date": "2025-12-06",
+  "home": "Raków",
+  "away": "GKS",
+  "kickoff": "17:30",
+  "date": "2025-12-07",
   "disabled": false
 },
 {
   "id": 162,
   "kolejkaId": 18,
-  "home": "Widzew",
-  "away": "Zagłębie",
-  "kickoff": "17:00",
-  "date": "2025-12-06",
+  "home": "Korona",
+  "away": "Wisła",
+  "kickoff": "19:00",
+  "date": "2025-12-08",
   "disabled": false
 }
 ]
