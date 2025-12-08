@@ -219,6 +219,8 @@ return (
                       {game.date}
                       &nbsp;&nbsp;&nbsp;
                       {game.kickoff}
+                       &nbsp;&nbsp;&nbsp;
+                      {game.message}
                     </td>
                   </tr>
                   <tr

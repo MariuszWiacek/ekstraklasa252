@@ -1481,7 +1481,8 @@
     "home": "Raków",
     "away": "Zagłębie",
     "kickoff": "14:45",
-    "date": "2025-12-14 - 4. kolejka - mecz zalegly",
+    "date": "2025-12-14",
+    "message" : " * 4. kolejka - mecz zaległy *",
     "disabled": false
   },
   {
@@ -1490,7 +1491,8 @@
     "home": "Motor",
     "away": "Jagiellonia",
     "kickoff": "17:30",
-    "date": "2025-12-14 - 3. kolejka - mecz zalegly",
+    "date": "2025-12-14",
+    "message" : " * 3. kolejka - mecz zaległy *",
     "disabled": false
   },
   {
@@ -1499,7 +1501,8 @@
     "home": "Legia",
     "away": "Piast",
     "kickoff": "20:15",
-    "date": "2025-12-14 - 1. kolejka - mecz zalegly",
+    "date": "2025-12-14",
+    "message" : " * 1. kolejka - mecz zaległy *",
     "disabled": false
   }
   
