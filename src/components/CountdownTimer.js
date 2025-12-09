@@ -115,9 +115,9 @@ const CountdownTimer = () => {
         </div>
       )}
 
-      {/* Message below countdown */}
+      
       <div style={{ marginTop: '12px', fontSize: '14px', lineHeight: '1.6', color: '#fff' }}>
-       
+      Ostatnia kolejka - 14.12, 3 mecze zaległe, Powodzenia! 
 
         
       </div>

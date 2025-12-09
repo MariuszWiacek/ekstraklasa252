@@ -189,20 +189,20 @@ const Stats = () => {
   return (
     <Container fluid>
       <Row>
-        <Col md={12}>
-          <h2 style={{ textAlign: 'center' }}>Statystyki Ogólne</h2>
+        <Col md={12}> <div style={{ marginTop: '10px', color: '#FFD700' }}>
+          Statystyki Ogólne
           <hr />
           <p><strong>🏆 Najczęściej wybierany wynik: </strong> {generalStats.mostChosenCorrectScore} ({generalStats.mostChosenCorrectScoreCount} razy)</p>
           <p><strong>💥 Najczęściej trafiony wynik: </strong> {generalStats.mostMatchedCorrectScore} ({generalStats.mostMatchedCorrectScoreCount} razy)</p>
           <p><strong>🔴 Najwięcej trafionych remisów: </strong> {generalStats.mostDraws} (Użytkownik: {generalStats.userWithMostDraws})</p>
           <p><strong>😵 Największy zapominalski: </strong> {generalStats.mostForgetfulUser} ({generalStats.mostForgetfulCount} pustych typów)</p>
-        </Col>
+        </div></Col>
       </Row>
 
       <Row>
-        <Col md={12}>
-          <h2 style={{ textAlign: 'center' }}>Statystyki Użytkowników</h2>
-          <hr />
+        <Col md={12}> <div style={{ marginTop: '10px', color: '#FFD700' }}><hr></hr>
+       Statystyki Użytkowników
+          <hr /><br></br>
           {userStats.length > 0 ? userStats.map((stats, idx) => (
             <div key={idx}>
               <h3>{stats.user}</h3>
@@ -230,7 +230,7 @@ const Stats = () => {
               <hr />
             </div>
           )) : <p>------</p>}
-        </Col>
+       </div> </Col>
       </Row>
     </Container>
   );

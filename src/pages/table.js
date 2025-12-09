@@ -302,17 +302,39 @@ const Table = () => {
 
 
 
-<div style={earningsStyle}>
+<div style={earningsStyle}><hr></hr>
+  <p style={{fontSize: '15px', }}>15x60=900 🥮
+          18 kolejek x 10 🥮 = 180 🥮
+          900 - 180=   720 🥮 w puli
+          <hr/></p>
+  <div style={{ marginTop: '10px', color: '#FFD700' }}>
+          
+          <b>Aktualne Nagrody :</b><hr />
+          {mainTableData[0] && (
+    <p>🥇 1 miejsce – <b>{mainTableData[0].user} - 400 🥮</b></p>
+  )}
+
+  {mainTableData[1] && (
+    <p>🥈 2 miejsce – <b>{mainTableData[1].user} – 200 🥮</b></p>
+  )}
+
+  {mainTableData[2] && (
+    <p>🥉 3 miejsce – <b>{mainTableData[2].user} – 120 🥮</b></p>
+  )}
+         
+        </div>
   <hr />
-  <h3>Aktualne bonusy:</h3>
+ <div style={{ marginTop: '10px', color: '#FFD700' }}>
+          
+          <b>Bonusy kolejkowe :<hr></hr></b>
   {Object.entries(userEarnings)
     .filter(([, earningsAmount]) => earningsAmount > 0) // Filter out users with 0 earnings
     .sort(([, earningsA], [, earningsB]) => earningsB - earningsA) // Sort by earnings in descending order
     .map(([user, earningsAmount]) => (
-      <div key={user}>
+      <p key={user}>
         {user}: {earningsAmount} 🥮
-      </div>
-              ))}
+      </p>
+              ))}</div>
           </div>
         </Col>
       </Row><hr style={{color: 'white'}}></hr>
