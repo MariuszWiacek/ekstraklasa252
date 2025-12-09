@@ -53,14 +53,22 @@ const ExpandableCard = ({ user, bets, results }) => {
           {groupedBets[currentKolejka]?.map((bet) => (
             <div key={bet.id} className="game-style">
               <div style={{ fontSize: '10px' }}>
-                <span style={{ color: 'black' }}>{bet.home}</span>
-                {' vs. '}
-                <span style={{ color: 'black' }}>{bet.away}</span>
-                {' | '}
-                <span style={{ color: 'blue' }}>Typ: [ {bet.bet} ]</span>
-                {' | '}
-                <span style={{ color: 'black' }}>{bet.score}</span>
-                <span className="results-style">Wynik: </span>
+                 <span style={{ color: 'black' }}>{bet.home}</span> vs. <span style={{ color: 'black' }}>{bet.away}</span> |{' '}
+
+                {currentKolejka === 0 || currentKolejka === 2 || currentKolejka === 3 ? (
+                  <>
+                    <span style={{ color: 'green' }}>Typ: [ ✔️ ]</span> | 
+                    <span style={{ color: 'green' }}>[ ✔️ ]</span>
+                    
+                  </>
+                ) : (
+                  <>
+                    <span style={{ color: 'blue' }}>Typ: [ {bet.bet} ]</span> | 
+                    <span style={{ color: 'black' }}>{bet.score}</span>
+                  </>
+                )}
+
+                <span className="results-style"> Wynik: </span>
                 <span>{results[bet.id]}</span>
                 {bet.score === results[bet.id] && <span className="correct-score">✅</span>}
                 {getTypeFromResult(results[bet.id]) === bet.bet && <span className="correct-type">☑️</span>}
